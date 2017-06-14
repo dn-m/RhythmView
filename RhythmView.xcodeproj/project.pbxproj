@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10EC375C1F8CADB93D1A0194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE7D4F5CE45D8D083EA05A /* Foundation.framework */; };
+		18B805D98E9E5F7B5576A06A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE7D4F5CE45D8D083EA05A /* Foundation.framework */; };
+		83A874345481E13937E8423A /* RhythmView.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B62C6E953C8D2E2AD1AF94 /* RhythmView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF8383A02EA414584D70926A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED09830392DCEBE9067AA63 /* Cocoa.framework */; };
+		B626329884561FB55FC34086 /* RhythmView.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B62C6E953C8D2E2AD1AF94 /* RhythmView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2B357367A6A6585CD7BEDA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED09830392DCEBE9067AA63 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ED6185B3D554A4EB8771AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2168892389001E4AE1C4D1E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E7271012FDB250036FA91A6;
+			remoteInfo = "RhythmView macOS";
+		};
+		FBC5496657205686E300653D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2168892389001E4AE1C4D1E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FE56D6F469C69B2689B4545;
+			remoteInfo = "RhythmView iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0280CD78E916E6B22A23F1F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = RhythmViewTests/Info.plist; sourceTree = "<group>"; };
+		1F9681F2B3E3F6573264BFB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = RhythmView/Info.plist; sourceTree = "<group>"; };
+		2BB89570256B64C6AEDC378A /* RhythmView macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RhythmView macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F74C36EBE6CB54EDBCD27D9 /* RhythmView iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RhythmView iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74FE7D4F5CE45D8D083EA05A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9ED09830392DCEBE9067AA63 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		A7B62C6E953C8D2E2AD1AF94 /* RhythmView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RhythmView.h; path = RhythmView/RhythmView.h; sourceTree = "<group>"; };
+		DDE83A9D7833A9C440FFAC73 /* RhythmView iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RhythmView iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BB918AB8B24BE957499758 /* RhythmView macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RhythmView macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F0AB7F760B6B801A273F4C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EC375C1F8CADB93D1A0194 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81A8703BF3E3FE37766A4288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8383A02EA414584D70926A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF1F52B3CC78C0012CA7A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B805D98E9E5F7B5576A06A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D783AF127A9AC7D97D13167C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B357367A6A6585CD7BEDA7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07E15C0FED64C8217F7E4DD1 = {
+			isa = PBXGroup;
+			children = (
+				BE860426C9104443D65A8A10 /* Products */,
+				9384285D262EA3FDD3E131AF /* Frameworks */,
+				0AB8D6CA06D330BE77259DF3 /* RhythmView */,
+				5D18988DA6C8F17CB605DC28 /* RhythmViewTests */,
+				A7B62C6E953C8D2E2AD1AF94 /* RhythmView.h */,
+			);
+			sourceTree = "<group>";
+		};
+		0AB8D6CA06D330BE77259DF3 /* RhythmView */ = {
+			isa = PBXGroup;
+			children = (
+				FB215B6AC084124E87FEA46C /* Supporting Files */,
+			);
+			name = RhythmView;
+			sourceTree = "<group>";
+		};
+		5D18988DA6C8F17CB605DC28 /* RhythmViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDA2B104AB078E2540306856 /* Supporting Files */,
+			);
+			name = RhythmViewTests;
+			sourceTree = "<group>";
+		};
+		9384285D262EA3FDD3E131AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5BAB9A2221649BFCCD3683A /* iOS */,
+				C23DD1C04BB080010EB59A56 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE860426C9104443D65A8A10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F74C36EBE6CB54EDBCD27D9 /* RhythmView iOS.framework */,
+				DDE83A9D7833A9C440FFAC73 /* RhythmView iOS Tests.xctest */,
+				E1BB918AB8B24BE957499758 /* RhythmView macOS.framework */,
+				2BB89570256B64C6AEDC378A /* RhythmView macOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23DD1C04BB080010EB59A56 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				9ED09830392DCEBE9067AA63 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		DDA2B104AB078E2540306856 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0280CD78E916E6B22A23F1F5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5BAB9A2221649BFCCD3683A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				74FE7D4F5CE45D8D083EA05A /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FB215B6AC084124E87FEA46C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F9681F2B3E3F6573264BFB0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1B3CC03CF49E9D3791BF6D00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B626329884561FB55FC34086 /* RhythmView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C99E4ED251B725A3D8484EEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A874345481E13937E8423A /* RhythmView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2E7271012FDB250036FA91A6 /* RhythmView macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47DE30DA5149EFD8E9310F33 /* Build configuration list for PBXNativeTarget "RhythmView macOS" */;
+			buildPhases = (
+				F4A21AFCEE0CBD1E5AEF3C93 /* Sources */,
+				81A8703BF3E3FE37766A4288 /* Frameworks */,
+				1B3CC03CF49E9D3791BF6D00 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RhythmView macOS";
+			productName = "RhythmView macOS";
+			productReference = E1BB918AB8B24BE957499758 /* RhythmView macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7FE56D6F469C69B2689B4545 /* RhythmView iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 388EAE325A2FF4147ABD02EE /* Build configuration list for PBXNativeTarget "RhythmView iOS" */;
+			buildPhases = (
+				4E5CEF6A62CE9D0FE4AA6F0B /* Sources */,
+				5F0AB7F760B6B801A273F4C5 /* Frameworks */,
+				C99E4ED251B725A3D8484EEE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RhythmView iOS";
+			productName = "RhythmView iOS";
+			productReference = 3F74C36EBE6CB54EDBCD27D9 /* RhythmView iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A99C04BD34F53D92B50BDFE2 /* RhythmView macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4032D8FC8AA16FD705F8B034 /* Build configuration list for PBXNativeTarget "RhythmView macOS Tests" */;
+			buildPhases = (
+				985189758550803449D816E2 /* Sources */,
+				D783AF127A9AC7D97D13167C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ED06F50D1F63F8C4697C770 /* PBXTargetDependency */,
+			);
+			name = "RhythmView macOS Tests";
+			productName = "RhythmView macOS Tests";
+			productReference = 2BB89570256B64C6AEDC378A /* RhythmView macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1B7E35831BE2B8016B898FC /* RhythmView iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4B6B0537F192121DA95341 /* Build configuration list for PBXNativeTarget "RhythmView iOS Tests" */;
+			buildPhases = (
+				8115F091D08DACF2B87F3A3D /* Sources */,
+				AFF1F52B3CC78C0012CA7A4C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4CDE7480C668B62D074A44A /* PBXTargetDependency */,
+			);
+			name = "RhythmView iOS Tests";
+			productName = "RhythmView iOS Tests";
+			productReference = DDE83A9D7833A9C440FFAC73 /* RhythmView iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2168892389001E4AE1C4D1E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 5F81629E957B7CB75399582B /* Build configuration list for PBXProject "RhythmView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07E15C0FED64C8217F7E4DD1;
+			productRefGroup = BE860426C9104443D65A8A10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FE56D6F469C69B2689B4545 /* RhythmView iOS */,
+				E1B7E35831BE2B8016B898FC /* RhythmView iOS Tests */,
+				2E7271012FDB250036FA91A6 /* RhythmView macOS */,
+				A99C04BD34F53D92B50BDFE2 /* RhythmView macOS Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E5CEF6A62CE9D0FE4AA6F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8115F091D08DACF2B87F3A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		985189758550803449D816E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A21AFCEE0CBD1E5AEF3C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ED06F50D1F63F8C4697C770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RhythmView macOS";
+			target = 2E7271012FDB250036FA91A6 /* RhythmView macOS */;
+			targetProxy = 7ED6185B3D554A4EB8771AA1 /* PBXContainerItemProxy */;
+		};
+		A4CDE7480C668B62D074A44A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RhythmView iOS";
+			target = 7FE56D6F469C69B2689B4545 /* RhythmView iOS */;
+			targetProxy = FBC5496657205686E300653D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		185231D9BDF05798429D4F87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = RhythmView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.RhythmView";
+				PRODUCT_NAME = RhythmView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4615D0F85ADE44D3E3EFECF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Debug;
+		};
+		631415891243778CBDF067C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70B12112386712028D805390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = RhythmView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.RhythmView";
+				PRODUCT_NAME = RhythmView;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95201218866D3425EF17A324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = RhythmViewTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		986BAB4FE186E8755EFAD003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = RhythmView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.RhythmView";
+				PRODUCT_NAME = RhythmView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAE677648B88ABAA1F517625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = RhythmViewTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B412173BFDD0A47066543FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = RhythmView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.RhythmView";
+				PRODUCT_NAME = RhythmView;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D83ABF363776193DD83C6DC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = RhythmViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E59AE33FD8D0E0C12C8B173D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = RhythmViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E4B6B0537F192121DA95341 /* Build configuration list for PBXNativeTarget "RhythmView iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83ABF363776193DD83C6DC1 /* Release */,
+				E59AE33FD8D0E0C12C8B173D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		388EAE325A2FF4147ABD02EE /* Build configuration list for PBXNativeTarget "RhythmView iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185231D9BDF05798429D4F87 /* Release */,
+				986BAB4FE186E8755EFAD003 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4032D8FC8AA16FD705F8B034 /* Build configuration list for PBXNativeTarget "RhythmView macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95201218866D3425EF17A324 /* Release */,
+				AAE677648B88ABAA1F517625 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47DE30DA5149EFD8E9310F33 /* Build configuration list for PBXNativeTarget "RhythmView macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B412173BFDD0A47066543FE3 /* Release */,
+				70B12112386712028D805390 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F81629E957B7CB75399582B /* Build configuration list for PBXProject "RhythmView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4615D0F85ADE44D3E3EFECF0 /* Debug */,
+				631415891243778CBDF067C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2168892389001E4AE1C4D1E2 /* Project object */;
+}
