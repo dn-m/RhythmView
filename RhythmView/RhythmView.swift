@@ -7,25 +7,45 @@
 //
 
 import Collections
-import ArithmeticTools
 import Rhythm
 import RhythmSpellingTools
-import GeometryTools
-import PathTools
 import GraphicsTools
 import QuartzCore
 
 public struct RhythmView: Renderer {
     
     public struct Configuration {
-        public let orientation: Orientation
-        public let beamWidth: Double
         
-        public init(orientation: Orientation, beamWidth: Double) {
+        // TODO: Create more rich structure
+        public let beatWidth: Double
+        public let orientation: Orientation
+        public let slope: Double
+        public let beamWidth: Double
+        public let beamletLength: Double
+        public let beamDisplacement: Double
+        public let beamStyling: Styling
+        
+        public init(
+            beatWidth: Double,
+            orientation: Orientation,
+            slope: Double,
+            beamWidth: Double,
+            beamletLength: Double,
+            beamDisplacement: Double,
+            beamStyling: Styling
+        )
+        {
+            self.beatWidth = beatWidth
             self.orientation = orientation
+            self.slope = slope
             self.beamWidth = beamWidth
+            self.beamletLength = beamletLength
+            self.beamDisplacement = beamDisplacement
+            self.beamStyling = beamStyling
         }
     }
+    
+    private let beamsRenderer = BeamsRenderer()
     
     private let spelledRhythm: SpelledRhythm
     
@@ -35,19 +55,35 @@ public struct RhythmView: Renderer {
     
     public func render(in context: CALayer, with configuration: Configuration) {
         
-        let beatWidth: Double = 240
-        
-        for offset in spelledRhythm.rhythm.metricalDurationTree.offsets {
-            print("offset: \(offset.doubleValue * beatWidth)")
+        for (offset, leaf, item) in spelledRhythm {
+            let x = offset * configuration.beatWidth
+            prepareBeams(at: x, junction: item.beamJunction)
         }
         
-        for item in spelledRhythm.spelling {
-            print(item)
-        }
+        let beamsConfiguration = BeamsRenderer.Configuration(
+            orientation: configuration.orientation,
+            slope: configuration.slope,
+            width: configuration.beamWidth,
+            beamletLength: configuration.beamletLength,
+            displacement: configuration.beamDisplacement,
+            styling: configuration.beamStyling
+        )
         
-        let rect = Path.rectangle(origin: Point(), size: Size(width: 100, height: configuration.beamWidth))
-        let beam = CAShapeLayer(rect)
-        beam.fillColor = Color.red.cgColor
-        context.addSublayer(beam)
+        beamsRenderer.render(in: context, with: beamsConfiguration)
+    }
+    
+    private func prepareBeams(at x: Double, junction: RhythmSpelling.BeamJunction) {
+        for (level, state) in junction.states {
+            switch state {
+            case .start:
+                beamsRenderer.startBeam(at: x, on: level)
+            case .stop:
+                beamsRenderer.stopBeam(at: x, on: level)
+            case .beamlet(let direction):
+                beamsRenderer.addBeamlet(at: x, on: level, direction: direction)
+            default:
+                break
+            }
+        }
     }
 }

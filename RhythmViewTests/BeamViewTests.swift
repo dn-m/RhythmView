@@ -8,6 +8,7 @@
 
 import XCTest
 import Collections
+import ArithmeticTools
 import Rhythm
 import RhythmSpellingTools
 import GeometryTools
@@ -31,7 +32,7 @@ class BeamViewTests: XCTestCase {
             return Beam(
                 start: Point(x: 0, y: y + offsetLeft),
                 end: Point(x: 300, y: y + offsetRight),
-                height: 30
+                width: 30
             )
         }
 
