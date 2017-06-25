@@ -7,10 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0730232A1EFED7390052D0B5 /* RhythmView.TieRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073023291EFED7390052D0B5 /* RhythmView.TieRenderer.swift */; };
+		0730232B1EFED7390052D0B5 /* RhythmView.TieRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073023291EFED7390052D0B5 /* RhythmView.TieRenderer.swift */; };
+		0789227A1EF2E1810037C572 /* SubdivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078922791EF2E1810037C572 /* SubdivisionView.swift */; };
+		0789227B1EF2E1810037C572 /* SubdivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078922791EF2E1810037C572 /* SubdivisionView.swift */; };
+		07AD14C71EFEA0AC007D6F42 /* BeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14C61EFEA0AC007D6F42 /* BeamView.swift */; };
+		07AD14C81EFEA0AC007D6F42 /* BeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14C61EFEA0AC007D6F42 /* BeamView.swift */; };
+		07AD14CA1EFEA430007D6F42 /* BeamViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14C91EFEA430007D6F42 /* BeamViewTests.swift */; };
+		07AD14CB1EFEA430007D6F42 /* BeamViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14C91EFEA430007D6F42 /* BeamViewTests.swift */; };
+		07AD14CD1EFEA775007D6F42 /* Beam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14CC1EFEA775007D6F42 /* Beam.swift */; };
+		07AD14CE1EFEA775007D6F42 /* Beam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14CC1EFEA775007D6F42 /* Beam.swift */; };
+		07AD14D61EFEC239007D6F42 /* RhythmView.BeamsRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14D51EFEC239007D6F42 /* RhythmView.BeamsRenderer.swift */; };
+		07AD14D71EFEC239007D6F42 /* RhythmView.BeamsRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14D51EFEC239007D6F42 /* RhythmView.BeamsRenderer.swift */; };
 		07C0B2A01EF1960E00C0334E /* RhythmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0B29F1EF1960E00C0334E /* RhythmView.swift */; };
 		07C0B2A11EF1960E00C0334E /* RhythmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0B29F1EF1960E00C0334E /* RhythmView.swift */; };
 		07C0B2A31EF1962600C0334E /* RhythmViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0B2A21EF1962600C0334E /* RhythmViewTests.swift */; };
 		07C0B2A41EF1962600C0334E /* RhythmViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0B2A21EF1962600C0334E /* RhythmViewTests.swift */; };
+		07E34EF11EF2BA55003A38B6 /* TupletBracketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E34EF01EF2BA55003A38B6 /* TupletBracketView.swift */; };
+		07E34EF21EF2BA55003A38B6 /* TupletBracketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E34EF01EF2BA55003A38B6 /* TupletBracketView.swift */; };
+		07E34EF41EF2BBCF003A38B6 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E34EF31EF2BBCF003A38B6 /* Orientation.swift */; };
+		07E34EF51EF2BBCF003A38B6 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E34EF31EF2BBCF003A38B6 /* Orientation.swift */; };
 		10EC375C1F8CADB93D1A0194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE7D4F5CE45D8D083EA05A /* Foundation.framework */; };
 		18B805D98E9E5F7B5576A06A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE7D4F5CE45D8D083EA05A /* Foundation.framework */; };
 		83A874345481E13937E8423A /* RhythmView.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B62C6E953C8D2E2AD1AF94 /* RhythmView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,8 +54,16 @@
 
 /* Begin PBXFileReference section */
 		0280CD78E916E6B22A23F1F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = RhythmViewTests/Info.plist; sourceTree = "<group>"; };
+		073023291EFED7390052D0B5 /* RhythmView.TieRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RhythmView.TieRenderer.swift; path = RhythmView/RhythmView.TieRenderer.swift; sourceTree = "<group>"; };
+		078922791EF2E1810037C572 /* SubdivisionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubdivisionView.swift; path = RhythmView/SubdivisionView.swift; sourceTree = "<group>"; };
+		07AD14C61EFEA0AC007D6F42 /* BeamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeamView.swift; path = RhythmView/BeamView.swift; sourceTree = "<group>"; };
+		07AD14C91EFEA430007D6F42 /* BeamViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeamViewTests.swift; path = RhythmViewTests/BeamViewTests.swift; sourceTree = "<group>"; };
+		07AD14CC1EFEA775007D6F42 /* Beam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Beam.swift; path = RhythmView/Beam.swift; sourceTree = "<group>"; };
+		07AD14D51EFEC239007D6F42 /* RhythmView.BeamsRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RhythmView.BeamsRenderer.swift; path = RhythmView/RhythmView.BeamsRenderer.swift; sourceTree = "<group>"; };
 		07C0B29F1EF1960E00C0334E /* RhythmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RhythmView.swift; path = RhythmView/RhythmView.swift; sourceTree = "<group>"; };
 		07C0B2A21EF1962600C0334E /* RhythmViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RhythmViewTests.swift; path = RhythmViewTests/RhythmViewTests.swift; sourceTree = "<group>"; };
+		07E34EF01EF2BA55003A38B6 /* TupletBracketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TupletBracketView.swift; path = RhythmView/TupletBracketView.swift; sourceTree = "<group>"; };
+		07E34EF31EF2BBCF003A38B6 /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Orientation.swift; path = RhythmView/Orientation.swift; sourceTree = "<group>"; };
 		1F9681F2B3E3F6573264BFB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = RhythmView/Info.plist; sourceTree = "<group>"; };
 		2BB89570256B64C6AEDC378A /* RhythmView macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RhythmView macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F74C36EBE6CB54EDBCD27D9 /* RhythmView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RhythmView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +125,14 @@
 			isa = PBXGroup;
 			children = (
 				FB215B6AC084124E87FEA46C /* Supporting Files */,
+				07AD14C61EFEA0AC007D6F42 /* BeamView.swift */,
 				07C0B29F1EF1960E00C0334E /* RhythmView.swift */,
+				07AD14D51EFEC239007D6F42 /* RhythmView.BeamsRenderer.swift */,
+				073023291EFED7390052D0B5 /* RhythmView.TieRenderer.swift */,
+				07AD14CC1EFEA775007D6F42 /* Beam.swift */,
+				078922791EF2E1810037C572 /* SubdivisionView.swift */,
+				07E34EF01EF2BA55003A38B6 /* TupletBracketView.swift */,
+				07E34EF31EF2BBCF003A38B6 /* Orientation.swift */,
 			);
 			name = RhythmView;
 			sourceTree = "<group>";
@@ -111,6 +142,7 @@
 			children = (
 				DDA2B104AB078E2540306856 /* Supporting Files */,
 				07C0B2A21EF1962600C0334E /* RhythmViewTests.swift */,
+				07AD14C91EFEA430007D6F42 /* BeamViewTests.swift */,
 			);
 			name = RhythmViewTests;
 			sourceTree = "<group>";
@@ -350,6 +382,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E34EF41EF2BBCF003A38B6 /* Orientation.swift in Sources */,
+				0789227A1EF2E1810037C572 /* SubdivisionView.swift in Sources */,
+				07AD14CD1EFEA775007D6F42 /* Beam.swift in Sources */,
+				07AD14C71EFEA0AC007D6F42 /* BeamView.swift in Sources */,
+				07AD14D61EFEC239007D6F42 /* RhythmView.BeamsRenderer.swift in Sources */,
+				0730232A1EFED7390052D0B5 /* RhythmView.TieRenderer.swift in Sources */,
+				07E34EF11EF2BA55003A38B6 /* TupletBracketView.swift in Sources */,
 				07C0B2A01EF1960E00C0334E /* RhythmView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C0B2A31EF1962600C0334E /* RhythmViewTests.swift in Sources */,
+				07AD14CA1EFEA430007D6F42 /* BeamViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C0B2A41EF1962600C0334E /* RhythmViewTests.swift in Sources */,
+				07AD14CB1EFEA430007D6F42 /* BeamViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +415,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E34EF51EF2BBCF003A38B6 /* Orientation.swift in Sources */,
+				0789227B1EF2E1810037C572 /* SubdivisionView.swift in Sources */,
+				07AD14CE1EFEA775007D6F42 /* Beam.swift in Sources */,
+				07AD14C81EFEA0AC007D6F42 /* BeamView.swift in Sources */,
+				07AD14D71EFEC239007D6F42 /* RhythmView.BeamsRenderer.swift in Sources */,
+				0730232B1EFED7390052D0B5 /* RhythmView.TieRenderer.swift in Sources */,
+				07E34EF21EF2BA55003A38B6 /* TupletBracketView.swift in Sources */,
 				07C0B2A11EF1960E00C0334E /* RhythmView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
