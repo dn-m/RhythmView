@@ -12,7 +12,7 @@ import RhythmSpellingTools
 import GraphicsTools
 import QuartzCore
 
-public struct RhythmView: Renderer {
+public class RhythmView: Renderer {
     
     public struct Configuration {
         
@@ -45,7 +45,9 @@ public struct RhythmView: Renderer {
         }
     }
     
-    private let beamsRenderer = BeamsRenderer()
+    private lazy var beamsRenderer: BeamsRenderer = {
+        return BeamsRenderer()
+    }()
     
     private let spelledRhythm: SpelledRhythm
     
@@ -73,7 +75,7 @@ public struct RhythmView: Renderer {
     }
     
     private func prepareBeams(at x: Double, junction: RhythmSpelling.BeamJunction) {
-        for (level, state) in junction.states {
+        junction.states.forEach { level, state in
             switch state {
             case .start:
                 beamsRenderer.startBeam(at: x, on: level)
