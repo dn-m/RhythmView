@@ -1,8 +1,8 @@
 //
-//  RhythmViewTests.swift
+//  BeamsViewTests.swift
 //  RhythmView
 //
-//  Created by James Bean on 6/14/17.
+//  Created by James Bean on 7/2/17.
 //
 //
 
@@ -10,14 +10,15 @@ import XCTest
 import Collections
 import Rhythm
 import RhythmSpellingTools
+import ArithmeticTools
 import GeometryTools
 import PathTools
 import GraphicsTools
 import RhythmView
 
-class RhythmViewTests: XCTestCase {
+class BeamsViewTests: XCTestCase {
 
-    func testRhythmView() {
+    func testBeamsView() {
 
         let durationTree = 4/>8 * [1,3,4,2,2,1]
         let contexts = durationTree.leaves.map { _ in MetricalContext<Int>.instance(.event(0)) }
@@ -44,8 +45,7 @@ class RhythmViewTests: XCTestCase {
             configuration: configuration
         )
 
-        let rhythmView = RhythmView(beamsView: beamsView)
-        let layer = CALayer(rhythmView.rendered)
-        layer.renderToPDF(name: "rhythm_view")
+        let layer = CALayer(beamsView.rendered)
+        layer.renderToPDF(name: "beams_view")
     }
 }
