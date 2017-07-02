@@ -17,10 +17,10 @@ public struct Beam {
     public init(start: Point, end: Point, width: Double) {
         
         let vertices = [
-            start.translatedBy(x: 0, y: 0.5 * width),
-            end.translatedBy(x: 0, y: 0.5 * width),
-            end.translatedBy(x: 0, y: -0.5 * width),
-            start.translatedBy(x: 0, y: -0.5 * width)
+            start.translatedBy(y: 0.5 * width),
+            end.translatedBy(y: 0.5 * width),
+            end.translatedBy(y: -0.5 * width),
+            start.translatedBy(y: -0.5 * width)
         ]
         
         let polygon = Polygon(vertices: vertices)
