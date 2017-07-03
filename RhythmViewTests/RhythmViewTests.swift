@@ -45,12 +45,12 @@ class RhythmViewTests: XCTestCase {
         )
 
         let rhythmView = RhythmView(beamsView: beamsView)
-        let path = rhythmView.rendered
-
-        print(path)
-
+        let path = rhythmView.rendered.resizedToFitContents.translated(by: Point(x: 0, y: 200))
         let layer = CALayer(path)
         layer.showTestBorder()
-        layer.renderToPDF(name: "rhythm_view")
+        let container = CALayer()
+        container.frame = CGRect(x: 0, y: 0, width: 800, height: 800)
+        container.addSublayer(layer)
+        container.renderToPDF(name: "rhythm_view")
     }
 }
