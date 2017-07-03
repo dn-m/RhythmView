@@ -46,6 +46,7 @@ class BeamsViewTests: XCTestCase {
         )
 
         let layer = CALayer(beamsView.rendered)
+        layer.showTestBorder()
         layer.renderToPDF(name: "beams_view")
     }
 }

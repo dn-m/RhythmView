@@ -31,7 +31,7 @@ class RhythmViewTests: XCTestCase {
 
         let configuration = BeamsView.Configuration(
             orientation: .stemsDown,
-            slope: 0,
+            slope: 0.125,
             width: 4,
             beamletLength: 6,
             displacement: 6,
@@ -45,7 +45,12 @@ class RhythmViewTests: XCTestCase {
         )
 
         let rhythmView = RhythmView(beamsView: beamsView)
-        let layer = CALayer(rhythmView.rendered)
+        let path = rhythmView.rendered
+
+        print(path)
+
+        let layer = CALayer(path)
+        layer.showTestBorder()
         layer.renderToPDF(name: "rhythm_view")
     }
 }
