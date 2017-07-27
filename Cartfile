@@ -1,2 +1,2 @@
-github "dn-m/RhythmSpellingTools"
-github "dn-m/GraphicsTools"
+github "dn-m/RhythmSpellingTools" >= 0.2.11
+github "dn-m/GraphicsTools" >= 0.11
