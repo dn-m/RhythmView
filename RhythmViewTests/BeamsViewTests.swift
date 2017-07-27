@@ -15,8 +15,9 @@ import GeometryTools
 import PathTools
 import GraphicsTools
 import RhythmView
+import GraphicsTestTools
 
-class BeamsViewTests: XCTestCase {
+class BeamsViewTests: GraphicsTestCase {
 
     func testBeamsView() {
 
@@ -47,6 +48,6 @@ class BeamsViewTests: XCTestCase {
 
         let layer = CALayer(beamsView.rendered)
         layer.showTestBorder()
-        layer.renderToPDF(name: "beams_view")
+        render(layer, name: "beams_view")
     }
 }

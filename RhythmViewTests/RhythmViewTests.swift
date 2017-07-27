@@ -14,8 +14,9 @@ import GeometryTools
 import PathTools
 import GraphicsTools
 import RhythmView
+import GraphicsTestTools
 
-class RhythmViewTests: XCTestCase {
+class RhythmViewTests: GraphicsTestCase {
 
     func testRhythmView() {
 
@@ -51,6 +52,6 @@ class RhythmViewTests: XCTestCase {
         let container = CALayer()
         container.frame = CGRect(x: 0, y: 0, width: 800, height: 800)
         container.addSublayer(layer)
-        container.renderToPDF(name: "rhythm_view")
+        render(container, name: "rhythm_view")
     }
 }

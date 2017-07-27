@@ -13,6 +13,10 @@
 		0730232B1EFED7390052D0B5 /* RhythmView.TieRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073023291EFED7390052D0B5 /* RhythmView.TieRenderer.swift */; };
 		0789227A1EF2E1810037C572 /* SubdivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078922791EF2E1810037C572 /* SubdivisionView.swift */; };
 		0789227B1EF2E1810037C572 /* SubdivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078922791EF2E1810037C572 /* SubdivisionView.swift */; };
+		079D602E1F2A582100AC83A5 /* GraphicsTestTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D602D1F2A582100AC83A5 /* GraphicsTestTools.framework */; };
+		079D60301F2A583000AC83A5 /* GraphicsTestTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D602F1F2A583000AC83A5 /* GraphicsTestTools.framework */; };
+		079D60311F2A583500AC83A5 /* RhythmView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F74C36EBE6CB54EDBCD27D9 /* RhythmView.framework */; };
+		079D60321F2A583800AC83A5 /* RhythmView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BB918AB8B24BE957499758 /* RhythmView.framework */; };
 		07AD14CD1EFEA775007D6F42 /* Beam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14CC1EFEA775007D6F42 /* Beam.swift */; };
 		07AD14CE1EFEA775007D6F42 /* Beam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD14CC1EFEA775007D6F42 /* Beam.swift */; };
 		07C0B2A01EF1960E00C0334E /* RhythmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0B29F1EF1960E00C0334E /* RhythmView.swift */; };
@@ -57,6 +61,8 @@
 		0714EB3C1F0909C100108B81 /* BeamsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeamsView.swift; path = RhythmView/BeamsView.swift; sourceTree = "<group>"; };
 		073023291EFED7390052D0B5 /* RhythmView.TieRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RhythmView.TieRenderer.swift; path = RhythmView/RhythmView.TieRenderer.swift; sourceTree = "<group>"; };
 		078922791EF2E1810037C572 /* SubdivisionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubdivisionView.swift; path = RhythmView/SubdivisionView.swift; sourceTree = "<group>"; };
+		079D602D1F2A582100AC83A5 /* GraphicsTestTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsTestTools.framework; path = Carthage/Build/iOS/GraphicsTestTools.framework; sourceTree = "<group>"; };
+		079D602F1F2A583000AC83A5 /* GraphicsTestTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsTestTools.framework; path = Carthage/Build/Mac/GraphicsTestTools.framework; sourceTree = "<group>"; };
 		07AD14CC1EFEA775007D6F42 /* Beam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Beam.swift; path = RhythmView/Beam.swift; sourceTree = "<group>"; };
 		07C0B29F1EF1960E00C0334E /* RhythmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RhythmView.swift; path = RhythmView/RhythmView.swift; sourceTree = "<group>"; };
 		07C0B2A21EF1962600C0334E /* RhythmViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RhythmViewTests.swift; path = RhythmViewTests/RhythmViewTests.swift; sourceTree = "<group>"; };
@@ -96,6 +102,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B805D98E9E5F7B5576A06A /* Foundation.framework in Frameworks */,
+				079D602E1F2A582100AC83A5 /* GraphicsTestTools.framework in Frameworks */,
+				079D60311F2A583500AC83A5 /* RhythmView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +112,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2B357367A6A6585CD7BEDA7 /* Cocoa.framework in Frameworks */,
+				079D60301F2A583000AC83A5 /* GraphicsTestTools.framework in Frameworks */,
+				079D60321F2A583800AC83A5 /* RhythmView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +160,8 @@
 		9384285D262EA3FDD3E131AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				079D602F1F2A583000AC83A5 /* GraphicsTestTools.framework */,
+				079D602D1F2A582100AC83A5 /* GraphicsTestTools.framework */,
 				F5BAB9A2221649BFCCD3683A /* iOS */,
 				C23DD1C04BB080010EB59A56 /* OS X */,
 			);
@@ -598,7 +610,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = RhythmViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(SRCROOT)/Carthage/Build/Mac";
@@ -650,7 +665,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = RhythmViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(SRCROOT)/Carthage/Build/Mac";
@@ -704,7 +722,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = RhythmViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -724,7 +745,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = RhythmViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
